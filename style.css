@@ -87,7 +87,7 @@ body {
   .hamburger div {
     width: 30px;
     height: 5px;
-    background-color: white;
+    background-color: black;
     border-radius: 5px;
   }
 
