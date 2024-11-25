@@ -1,0 +1,481 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    margin: 20px 50px;
+    position: relative;
+    bottom: 50px;
+  }
+
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+
+  .navbar a {
+    text-decoration: none;
+    color: rgb(22, 1, 24);
+    font-size: 18px;
+  }
+
+  .navbar button {
+    padding: 10px 20px;
+    background-color: #3983dd;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left: 28px;
+  }
+
+  .navbar button:hover {
+    background-color: #777;
+  }
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    width: 30px;
+    height: 25px;
+  }
+
+  .hamburger div {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  /* Mobile and Tablet responsiveness */
+  @media (max-width: 768px) {
+    .navbar{
+        margin: 20px 10px;
+    }
+    .navbar ul {
+      display: none;
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 100px;
+      left: 40px;
+      right: 40px;
+      color: #333;
+      background-color: #f4f4f4;
+      border-radius: 10px;
+      padding: 20px;
+      padding-bottom: 70px;
+      z-index: 10;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    }
+
+    .navbar button{
+        display:none;
+        position: relative;
+        top: 280px;
+        left: -7px;
+        z-index: 11;
+    }
+
+    .navbar button.show{
+        display: flex;
+    }
+    
+    .navbar ul.show {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+
+    .navbar a {
+      font-size: 20px;
+    }
+  }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #2575fc, #6a11cb);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero .btn {
+    background: white;
+    color: #2575fc;
+    position: relative;
+    top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #2575fc;
+    color: white;
+}
+
+/* UI Cards */
+.ui-cards {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.card-grid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.buttons {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.button-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-hover {
+    background: #6a11cb;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn-hover:hover {
+    background: #2575fc;
+    transform: translateY(-5px);
+}
+
+/* About */
+.about {
+    text-align: center;
+    padding: 40px 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Pricing Section */
+.pricing-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Pricing Card */
+.pricing-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.plan-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    color: #333;
+}
+
+.plan-price span {
+    font-size: 1rem;
+    color: #666;
+}
+
+.features-list {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    color: #555;
+}
+
+.features-listX {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+    color: #eeeeee;
+}
+
+#s{
+    color: #e0e0e0;
+}
+
+.features-list li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+/* Featured Plan */
+.featured {
+    background: linear-gradient(to left, #5e36e3, #2575fc);
+    color: white;
+    transform: scale(1.05);
+}
+
+.featured .plan-title,
+.featured .plan-price {
+    color: white;
+}
+
+.featured .btn {
+    background: #fff;
+    color: #007bff;
+}
+
+.featured .btn:hover {
+    background: #e0e0e0;
+    color: #007bff;
+}
+
+
+/* Feedback Section */
+.feedback-section {
+    justify-content: center;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.feedback-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2), rgba(0,0,0,0));
+    z-index: 0;
+    animation: rotate-bg 8s linear infinite;
+}
+
+@keyframes rotate-bg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+    color: #007bff;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    color: #666;
+}
+
+/* Feedback Form */
+.feedback-form {
+    position: relative;
+    z-index: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #007bff;
+}
+
+.btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Thank You Message */
+.thank-you-message {
+    display: none;
+    animation: fade-in 1s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

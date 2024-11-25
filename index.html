@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIverse-Inspired Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <section id="home" class="hero">
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="logo">
+          <a href="#">Logo</a>
+        </div>
+    
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    
+        <button id="navBtn">Sign Up</button>
+    
+        <div class="hamburger" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    
+      
+    <!-- Hero Section -->
+   
+        <div class="container">
+            <h2>Welcome to CosmosCodex</h2>
+            <p>Browse innovative UI designs and hover effects.</p>
+            <a href="#cards" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- UI Cards Section -->
+    <section id="cards" class="ui-cards">
+        <div class="container">
+            <h2>Interactive UI Cards</h2>
+            <div class="card-grid">
+                <!-- Card 1 -->
+                <div class="card">
+                    <h3>Card Title 1</h3>
+                    <p>Hover to reveal more!</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="card">
+                    <h3>Card Title 2</h3>
+                    <p>Hover to reveal more!</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="card">
+                    <h3>Card Title 3</h3>
+                    <p>Hover to reveal more!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button Section -->
+    <section id="buttons" class="buttons">
+        <div class="container">
+            <h2>Interactive Buttons</h2>
+            <div class="button-grid">
+                <a href="#" class="btn-hover">Hover Me!</a>
+                <a href="#" class="btn-hover">Click Me!</a>
+                <a href="#" class="btn-hover">Explore!</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About UIverse</h2>
+            <p>
+                This project is inspired by innovative UI designs. It's a showcase of 
+                interactive elements and creative web components to spark your imagination.
+            </p>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="container">
+            <h1 class="section-title">Our Pricing Plans</h1>
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <h2 class="plan-title">Basic</h2>
+                    <p class="plan-price">$9<span>/month</span></p>
+                    <ul class="features-list">
+                        <li>10 Projects</li>
+                        <li>5 GB Storage</li>
+                        <li>Basic Support</li>
+                    </ul>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+                <!-- Standard Plan -->
+                <div class="pricing-card featured">
+                    <h2 class="plan-title">Standard</h2>
+                    <p class="plan-price">$19<span id="s">/month</span></p>
+                    <ul class="features-listX">
+                        <li>50 Projects</li>
+                        <li>20 GB Storage</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card">
+                    <h2 class="plan-title">Premium</h2>
+                    <p class="plan-price">$49<span>/month</span></p>
+                    <ul class="features-list">
+                        <li>Unlimited Projects</li>
+                        <li>100 GB Storage</li>
+                        <li>24/7 Support</li>
+                    </ul>
+                    <a href="#" class="btn">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback-section">
+        <div class="container">
+            <h1 class="section-title">We Value Your Feedback</h1>
+            <p class="section-subtitle">Let us know how we are doing! Your feedback helps us improve.</p>
+
+            <form class="feedback-form" id="feedbackForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Feedback</label>
+                    <textarea id="message" rows="4" placeholder="Share your thoughts" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit Feedback</button>
+            </form>
+
+            <div class="thank-you-message" id="thankYouMessage">
+                <h2>Thank You for Your Feedback!</h2>
+                <p>We appreciate your input and will use it to improve our services.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 CosmosCodeX. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function toggleMenu() {
+          const navLinks = document.querySelector('.nav-links');
+          navLinks.classList.toggle('show');
+          const navBtn = document.querySelector('#navBtn');
+          navBtn.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>
